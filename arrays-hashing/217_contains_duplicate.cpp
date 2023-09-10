@@ -6,11 +6,11 @@ class Solution {
 public:
     bool containsDuplicate(std::vector<int>& nums) {
         std::unordered_set<int> seen;
-        for (int& i : nums) {
-            if (seen.find(i) != seen.end()) {
+        for (int& num : nums) {
+            if (seen.find(num) != seen.end()) {
                 return true;
             }
-            seen.insert(i);
+            seen.insert(num);
         }
         return false;
     }
