@@ -17,6 +17,7 @@ class Solution:
                 return True
         return False
 
+
     def wordBreakDynamic(self, s: str, wordEnd: int, wordDict: List[str], memo: List[int]):
         if wordEnd < 0:
             return True
