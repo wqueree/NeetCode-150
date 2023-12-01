@@ -16,7 +16,7 @@ class Solution:
         no_deps: List[int] = [i for i in range(numCourses) if not i in indegrees]
         order: List[int] = []
         while no_deps:
-            curr = no_deps.pop()
+            curr: int = no_deps.pop()
             order.append(curr)
             for adjacent in adjacents[curr]:
                 indegrees[adjacent] -= 1
