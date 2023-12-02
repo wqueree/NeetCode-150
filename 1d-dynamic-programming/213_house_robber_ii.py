@@ -11,6 +11,7 @@ class Solution:
             dp[i] = nums_range[i] + max(dp[: i - 1])
         return max(dp)
 
+
     def rob(self, nums: List[int]) -> int:
         if len(nums) < 3:
             return max(nums)
